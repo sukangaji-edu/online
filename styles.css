@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(128, 44%, 48%); /* Hijau muda */
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('https://img.freepik.com/premium-vector/green-abstract-modern-background-banner-vector-illustration-with-wavy-frame-shape_311875-1417.jpg'); /* Ganti dengan URL gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    opacity: 100;
+    padding: 60px;
+    text-align: center;
+}
+
+marquee {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Cooper Black', serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #bdfabf; /* Putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    font-family: 'Baskerville', serif;
+    color: #2c3e50;
+}
+
+p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #2ecc71; /* Hijau */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60; /* Hijau lebih gelap */
+}
+
+footer {
+    background-color: #00863c; /* Hijau tua */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0c3d1b; /* Biru */
+    transition: color 0.3s;
+    float: right;
+}
+
+ul li a:hover {
+    color: #32da4e; /* Biru lebih terang */
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 20%;
+    left: 80%;
+    max-width: 70px;
+    width: 100%;
+    font-size: 20px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(17, 87, 46);
+    padding: .5px;
+    border-radius: 4px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #7dbbf1;
+}
+
+/*Container*/
+.hijaiyah {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.letter {
+    padding: 10px;
+    background: #e8f5e9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.letter:hover {
+    background: #c8e6c9;
+}
+
+audio {
+    display: none;
+}
+
+/*Blink*/
+.blink {
+    animation: blinker 2s linear infinite;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* Larger, responsive font size */
+    margin-bottom: 0px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
