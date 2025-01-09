@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Huruf Hijaiyah</title>
+    <script language='JavaScript'>
+        var txt="       Suka Ngaji ~";
+        var speed=300;
+        var refresh=null;
+        function action() { document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresh=setTimeout("action()",speed);}action();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: azure;">Mengenal Huruf Hijaiyah</h1>
+    <p style="color: azure;">Mudah memahami huruf hijaiyah, Insya Allah</p>
+    </header>
+    <main>
+        <marquee bgcolor="#bdfabf" height="35"><p style="color: #2c3e50;">Sebelum belajar jangan lupa baca do'a ya! Bismillahirrohmanirrohim...</p></marquee>
+        <section id="materi">
+            <h3 style="font-family: 'Baskerville', serif;">Materi</h3>
+            <ul>
+                <li><a href="#alif-lam"><button type="submit">Alif Lam</button></a></li>
+                <li><a href="#tanwin"><button type="submit">Tanwin</button></a></li>
+                <li><a href="#mad"><button type="submit">Mad Thobi'i</button></a></li>
+                <li><a href="#harokat"><button type="submit">Harokat</button></a></li>
+                <li><a href="#pelafalan"><button type="submit">Cara Pelafalan</button></a></li>
+            </ul>
+            <p style="font-family: Arial, sans-serif;">Halo, selamat datang di program belajar mengaji ini!</p>
+            <p style="font-family: Arial, sans-serif;">Kali ini aku mau ajarin beberapa ilmu tentang <b>Huruf Hijaiyah.</b></p>
+            <p style="font-family: Arial, sans-serif;">Ada apa aja ya? kamu bisa lihat ke samping kanan >>></p>
+        </section>
+
+        <section id="pelafalan">
+            <h3 style="font-family: 'Baskerville', serif;">Cara Pelafalan</h3>
+            <br>
+
+            <div class="container">
+                <div class="hijaiyah">
+                    <div class="letter" onclick="playAudio('alif')">ا</div>
+                    <div class="letter" onclick="playAudio('ba')">ب</div>
+                    <div class="letter" onclick="playAudio('ta')">ت</div>
+                    <div class="letter" onclick="playAudio('tsa')">ث</div>
+                    <div class="letter" onclick="playAudio('jim')">ج</div>
+                    <div class="letter" onclick="playAudio('ha')">ح</div>
+                    <div class="letter" onclick="playAudio('kho')">خ</div>
+                    <div class="letter" onclick="playAudio('dal')">د</div>
+                    <div class="letter" onclick="playAudio('dzal')">ذ</div>
+                    <div class="letter" onclick="playAudio('ra')">ر</div>
+                    <div class="letter" onclick="playAudio('zai')">ز</div>
+                    <div class="letter" onclick="playAudio('sin')">س</div>
+                    <div class="letter" onclick="playAudio('syin')">ش</div>
+                    <div class="letter" onclick="playAudio('shad')">ص</div>
+                    <div class="letter" onclick="playAudio('dhad')">ض</div>
+                    <div class="letter" onclick="playAudio('tha')">ط</div>
+                    <div class="letter" onclick="playAudio('zha')">ظ</div>
+                    <div class="letter" onclick="playAudio('ain')">ع</div>
+                    <div class="letter" onclick="playAudio('ghain')">غ</div>
+                    <div class="letter" onclick="playAudio('fa')">ف</div>
+                    <div class="letter" onclick="playAudio('qaf')">ق</div>
+                    <div class="letter" onclick="playAudio('kaf')">ك</div>
+                    <div class="letter" onclick="playAudio('lam')">ل</div>
+                    <div class="letter" onclick="playAudio('mim')">م</div>
+                    <div class="letter" onclick="playAudio('nun')">ن</div>
+                    <div class="letter" onclick="playAudio('waw')">و</div>
+                    <div class="letter" onclick="playAudio('ha2')">ه</div>
+                    <div class="letter" onclick="playAudio('ya')">ي</div>
+                </div>
+
+            <div id="huruf-buttons"></div>
+        </section>
+
+        <section id="harokat">
+            <h3 style="font-family: 'Baskerville', serif;">Harokat</h3>
+            <p style="font-family: Arial, sans-serif;"><b>Harokat</b> adalah tanda baca pada huruf Arab untuk memperjelas cara membaca dan pengucapan huruf tersebut.</p>
+            <p style="font-family: Arial, sans-serif;">Kamu tahu ga? ada banyak jenis harokat dalam bahasa Arab, tapi sekarang kamu pahami 3 harokat di bawah ini dulu ya!</p>
+            <a href="#fathah"><button type="submit">Fathah</button></a>
+            <a href="#kasroh"><button type="submit">Kasroh</button></a>
+            <a href="#dhommah"><button type="submit">Dhommah</button></a>
+
+            <div id="harokat-buttons"></div>
+        </section>
+
+            <section id="fathah">
+                <h3 style="font-family: 'Baskerville', serif;">Fathah</h3>
+                <br>
+                <div class="container">
+                    <div class="hijaiyah">
+                        <div class="letter" onclick="playAudio('alif1')">ا</div>
+                        <div class="letter" onclick="playAudio('ba1')">ب</div>
+                        <div class="letter" onclick="playAudio('ta1')">ت</div>
+                        <div class="letter" onclick="playAudio('tsa1')">ث</div>
+                        <div class="letter" onclick="playAudio('jim1')">ج</div>
+                        <div class="letter" onclick="playAudio('ha1')">ح</div>
+                        <div class="letter" onclick="playAudio('kho1')">خ</div>
+                        <div class="letter" onclick="playAudio('dal1')">د</div>
+                        <div class="letter" onclick="playAudio('dzal1')">ذ</div>
+                        <div class="letter" onclick="playAudio('ra1')">ر</div>
+                        <div class="letter" onclick="playAudio('zai1')">ز</div>
+                        <div class="letter" onclick="playAudio('sin1')">س</div>
+                        <div class="letter" onclick="playAudio('syin1')">ش</div>
+                        <div class="letter" onclick="playAudio('shad1')">ص</div>
+                        <div class="letter" onclick="playAudio('dhad1')">ض</div>
+                        <div class="letter" onclick="playAudio('tha1')">ط</div>
+                        <div class="letter" onclick="playAudio('zha1')">ظ</div>
+                        <div class="letter" onclick="playAudio('ain1')">ع</div>
+                        <div class="letter" onclick="playAudio('ghain1')">غ</div>
+                        <div class="letter" onclick="playAudio('fa1')">ف</div>
+                        <div class="letter" onclick="playAudio('qaf1')">ق</div>
+                        <div class="letter" onclick="playAudio('kaf1')">ك</div>
+                        <div class="letter" onclick="playAudio('lam1')">ل</div>
+                        <div class="letter" onclick="playAudio('mim1')">م</div>
+                        <div class="letter" onclick="playAudio('nun1')">ن</div>
+                        <div class="letter" onclick="playAudio('waw1')">و</div>
+                        <div class="letter" onclick="playAudio('ha21')">ه</div>
+                        <div class="letter" onclick="playAudio('ya1')">ي</div>
+                    </div>
+            </section>
+
+            <section id="kasroh">
+                <h3 style="font-family: 'Baskerville', serif;">Kasroh</h3>
+                <br>
+                <div class="container">
+                    <div class="hijaiyah">
+                        <div class="letter" onclick="playAudio('alif2')">ا</div>
+                        <div class="letter" onclick="playAudio('ba2')">ب</div>
+                        <div class="letter" onclick="playAudio('ta2')">ت</div>
+                        <div class="letter" onclick="playAudio('tsa2')">ث</div>
+                        <div class="letter" onclick="playAudio('jim2')">ج</div>
+                        <div class="letter" onclick="playAudio('ha2')">ح</div>
+                        <div class="letter" onclick="playAudio('kho2')">خ</div>
+                        <div class="letter" onclick="playAudio('dal2')">د</div>
+                        <div class="letter" onclick="playAudio('dzal2')">ذ</div>
+                        <div class="letter" onclick="playAudio('ra2')">ر</div>
+                        <div class="letter" onclick="playAudio('zai2')">ز</div>
+                        <div class="letter" onclick="playAudio('sin2')">س</div>
+                        <div class="letter" onclick="playAudio('syin2')">ش</div>
+                        <div class="letter" onclick="playAudio('shad2')">ص</div>
+                        <div class="letter" onclick="playAudio('dhad2')">ض</div>
+                        <div class="letter" onclick="playAudio('tha2')">ط</div>
+                        <div class="letter" onclick="playAudio('zha2')">ظ</div>
+                        <div class="letter" onclick="playAudio('ain2')">ع</div>
+                        <div class="letter" onclick="playAudio('ghain2')">غ</div>
+                        <div class="letter" onclick="playAudio('fa2')">ف</div>
+                        <div class="letter" onclick="playAudio('qaf2')">ق</div>
+                        <div class="letter" onclick="playAudio('kaf2')">ك</div>
+                        <div class="letter" onclick="playAudio('lam2')">ل</div>
+                        <div class="letter" onclick="playAudio('mim2')">م</div>
+                        <div class="letter" onclick="playAudio('nun2')">ن</div>
+                        <div class="letter" onclick="playAudio('waw2')">و</div>
+                        <div class="letter" onclick="playAudio('ha22')">ه</div>
+                        <div class="letter" onclick="playAudio('ya2')">ي</div>
+                    </div>
+            </section>
+
+            <section id="dhommah">
+                <h3 style="font-family: 'Baskerville', serif;">Dhommah</h3>
+                <br>
+                <div class="container">
+                    <div class="hijaiyah">
+                        <div class="letter" onclick="playAudio('alif3')">ا</div>
+                        <div class="letter" onclick="playAudio('ba3')">ب</div>
+                        <div class="letter" onclick="playAudio('ta3')">ت</div>
+                        <div class="letter" onclick="playAudio('tsa3')">ث</div>
+                        <div class="letter" onclick="playAudio('jim3')">ج</div>
+                        <div class="letter" onclick="playAudio('ha3')">ح</div>
+                        <div class="letter" onclick="playAudio('kho3')">خ</div>
+                        <div class="letter" onclick="playAudio('dal3')">د</div>
+                        <div class="letter" onclick="playAudio('dzal3')">ذ</div>
+                        <div class="letter" onclick="playAudio('ra3')">ر</div>
+                        <div class="letter" onclick="playAudio('zai3')">ز</div>
+                        <div class="letter" onclick="playAudio('sin3')">س</div>
+                        <div class="letter" onclick="playAudio('syin3')">ش</div>
+                        <div class="letter" onclick="playAudio('shad3')">ص</div>
+                        <div class="letter" onclick="playAudio('dhad3')">ض</div>
+                        <div class="letter" onclick="playAudio('tha3')">ط</div>
+                        <div class="letter" onclick="playAudio('zha3')">ظ</div>
+                        <div class="letter" onclick="playAudio('ain3')">ع</div>
+                        <div class="letter" onclick="playAudio('ghain3')">غ</div>
+                        <div class="letter" onclick="playAudio('fa3')">ف</div>
+                        <div class="letter" onclick="playAudio('qaf3')">ق</div>
+                        <div class="letter" onclick="playAudio('kaf3')">ك</div>
+                        <div class="letter" onclick="playAudio('lam3')">ل</div>
+                        <div class="letter" onclick="playAudio('mim3')">م</div>
+                        <div class="letter" onclick="playAudio('nun3')">ن</div>
+                        <div class="letter" onclick="playAudio('waw3')">و</div>
+                        <div class="letter" onclick="playAudio('ha23')">ه</div>
+                        <div class="letter" onclick="playAudio('ya3')">ي</div>
+                    </div>
+            </section>
+
+        <section id="mad">
+            <h3 style="font-family: 'Baskerville', serif;">Mad Thobi'i</h3>
+            <p style="font-family: Arial, sans-serif;"><b>Mad Thobi'i</b> adalah memanjangkan bacaan huruf hijaiyah yang berharakat fathah jika bertemu dengan alif mati (ا),</p>
+            <p style="font-family: Arial, sans-serif;">berharakat kasroh jika bertemu dengan huruf ya mati (يْ), dan berharakat dhommah jika bertemu huruf wau mati (وْ).</p>
+            <p style="font-family: Arial, sans-serif;">Panjangnya itu 2 harokat.</p>
+            <button onclick="playSound('mad_alif')">Mad Thobi'i Alif</button>
+            <button onclick="playSound('mad_ya')">Mad Thobi'i Ya</button>
+            <button onclick="playSound('mad_wau')">Mad Thobi'i Wau</button>
+        </section>
+
+        <section id="tanwin">
+            <h3 style="font-family: 'Baskerville', serif;">Tanwin</h3>
+            <p style="font-family: Arial, sans-serif;"><b>Tanwin</b> adalah adalah tanda baca pada tulisan Arab untuk menjelaskan bahwa huruf</p>
+            <p style="font-family: Arial, sans-serif;">pada akhir kata tersebut diucapkan seperti bertemu dengan huruf nun mati.</p>
+            <button onclick="playSound('fathah_tain')">Fathah-tain</button>
+            <button onclick="playSound('kasroh_tain')">Kasroh-tain</button>
+            <button onclick="playSound('dhommah_tain')">Dhommah-tain</button>
+        </section>
+
+        <section id="alif-lam">
+            <h3 style="font-family: 'Baskerville', serif;">Alif Lam</h3>
+            <p style="font-family: Arial, sans-serif;"><b>Alif Lam</b> adalah huruf alif dan lam yang berada di awal kata benda (isim)</p>
+            <p style="font-family: Arial, sans-serif;">dan diikuti dengan salah satu dari huruf-huruf <b>Qomariyah</b> atau <b>Syamsyiah</b>.</p>
+            <button onclick="playSound('alif_lam_qomariyah')">Alif Lam Qomariyah</button>
+            <button onclick="playSound('alif_lam_syamsyiah')">Alif Lam Syamsyiah</button>
+        </section>
+    </main>
+    <footer>
+        <marquee bgcolor="#bdfabf" height="35"><p style="color: #2c3e50;">Setelah belajar mari kita baca Shodaqallahul'adzim...</p></marquee>
+        <p>Kalau kamu rajin belajar dan terus mengaji, kamu bisa cepat baca Al-Qur'an loh!</p>
+        <p class="blink"><b>AYO SEMANGAT!</b></p>
+        <br>
+        <p>© 2024 Pengenalan Huruf Hijaiyah</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <button id="myBtn"><a href="#top" style="color: white">Awal</a></button>
+
+    <!-- Audio Files -->
+    <audio id="alif" src="sounds/alif.mp3"></audio>
+    <audio id="ba" src="sounds/ba.mp3"></audio>
+    <audio id="ta" src="sounds/ta.mp3"></audio>
+    <audio id="tsa" src="sounds/tsa.mp3"></audio>
+    <audio id="jim" src="sounds/jim.mp3"></audio>
+    <audio id="ha" src="sounds/ha.mp3"></audio>
+    <audio id="kho" src="sounds/kho.mp3"></audio>
+    <audio id="dal" src="sounds/dal.mp3"></audio>
+    <audio id="dzal" src="sounds/dzal.mp3"></audio>
+    <audio id="ra" src="sounds/ra.mp3"></audio>
+    <audio id="zai" src="sounds/zai.mp3"></audio>
+    <audio id="sin" src="sounds/sin.mp3"></audio>
+    <audio id="syin" src="sounds/syin.mp3"></audio>
+    <audio id="shad" src="sounds/shad.mp3"></audio>
+    <audio id="dhad" src="sounds/dhad.mp3"></audio>
+    <audio id="tha" src="sounds/tha.mp3"></audio>
+    <audio id="zha" src="sounds/zha.mp3"></audio>
+    <audio id="ain" src="sounds/ain.mp3"></audio>
+    <audio id="ghain" src="sounds/ghain.mp3"></audio>
+    <audio id="fa" src="sounds/fa.mp3"></audio>
+    <audio id="qaf" src="sounds/qaf.mp3"></audio>
+    <audio id="kaf" src="sounds/kaf.mp3"></audio>
+    <audio id="lam" src="sounds/lam.mp3"></audio>
+    <audio id="mim" src="sounds/mim.mp3"></audio>
+    <audio id="nun" src="sounds/nun.mp3"></audio>
+    <audio id="ha2" src="sounds/ha2.mp3"></audio>
+    <audio id="waw" src="sounds/waw.mp3"></audio>
+    <audio id="ya" src="sounds/ya.mp3"></audio>
+
+    <audio id="bismillah" src="sounds/bismillah.m4a"></audio>
+    <audio id="alif1" src="sounds/alif1.m4a"></audio>
+    <audio id="ba1" src="sounds/ba1.m4a"></audio>
+    <audio id="ta1" src="sounds/ta1.m4a"></audio>
+    <audio id="tsa1" src="sounds/tsa1.m4a"></audio>
+    <audio id="jim1" src="sounds/jim1.m4a"></audio>
+    <audio id="ha1" src="sounds/ha1.m4a"></audio>
+    <audio id="kho1" src="sounds/kho1.m4a"></audio>
+    <audio id="dal1" src="sounds/dal1.m4a"></audio>
+    <audio id="dzal1" src="sounds/dzal1.m4a"></audio>
+    <audio id="ra1" src="sounds/ra1.m4a"></audio>
+    <audio id="zai1" src="sounds/zai1.m4a"></audio>
+    <audio id="sin1" src="sounds/sin1.m4a"></audio>
+    <audio id="syin1" src="sounds/syin1.m4a"></audio>
+    <audio id="shad1" src="sounds/shad1.m4a"></audio>
+    <audio id="dhad1" src="sounds/dhad1.m4a"></audio>
+    <audio id="tha1" src="sounds/tha1.m4a"></audio>
+    <audio id="zha1" src="sounds/zha1.m4a"></audio>
+    <audio id="ain1" src="sounds/ain1.m4a"></audio>
+    <audio id="ghain1" src="sounds/ghain1.m4a"></audio>
+    <audio id="fa1" src="sounds/fa1.m4a"></audio>
+    <audio id="qaf1" src="sounds/qaf1.m4a"></audio>
+    <audio id="kaf1" src="sounds/kaf1.m4a"></audio>
+    <audio id="lam1" src="sounds/lam1.m4a"></audio>
+    <audio id="mim1" src="sounds/mim1.m4a"></audio>
+    <audio id="nun1" src="sounds/nun1.m4a"></audio>
+    <audio id="ha21" src="sounds/ha21.m4a"></audio>
+    <audio id="waw1" src="sounds/waw1.m4a"></audio>
+    <audio id="ya1" src="sounds/ya1.m4a"></audio>
+
+    <audio id="alif2" src="sounds/alif2.m4a"></audio>
+    <audio id="ba2" src="sounds/ba2.m4a"></audio>
+    <audio id="ta2" src="sounds/ta2.m4a"></audio>
+    <audio id="tsa2" src="sounds/tsa2.m4a"></audio>
+    <audio id="jim2" src="sounds/jim2.m4a"></audio>
+    <audio id="ha2" src="sounds/ha2.m4a"></audio>
+    <audio id="kho2" src="sounds/kho2.m4a"></audio>
+    <audio id="dal2" src="sounds/dal2.m4a"></audio>
+    <audio id="dzal2" src="sounds/dzal2.m4a"></audio>
+    <audio id="ra2" src="sounds/ra2.m4a"></audio>
+    <audio id="zai2" src="sounds/zai2.m4a"></audio>
+    <audio id="sin2" src="sounds/sin2.m4a"></audio>
+    <audio id="syin2" src="sounds/syin2.mp3"></audio>
+    <audio id="shad2" src="sounds/shad2.m4a"></audio>
+    <audio id="dhad2" src="sounds/dhad2.m4a"></audio>
+    <audio id="tha2" src="sounds/tha2.m4a"></audio>
+    <audio id="zha2" src="sounds/zha2.m4a"></audio>
+    <audio id="ain2" src="sounds/ain2.m4a"></audio>
+    <audio id="ghain2" src="sounds/ghain2.m4a"></audio>
+    <audio id="fa2" src="sounds/fa2.m4a"></audio>
+    <audio id="qaf2" src="sounds/qaf2.m4a"></audio>
+    <audio id="kaf2" src="sounds/kaf2.m4a"></audio>
+    <audio id="lam2" src="sounds/lam2.m4a"></audio>
+    <audio id="mim2" src="sounds/mim2.m4a"></audio>
+    <audio id="nun2" src="sounds/nun2.m4a"></audio>
+    <audio id="ha22" src="sounds/ha22.m4a"></audio>
+    <audio id="waw2" src="sounds/waw2.m4a"></audio>
+    <audio id="ya2" src="sounds/ya2.m4a"></audio>
+
+    <audio id="alif3" src="sounds/alif3.m4a"></audio>
+    <audio id="ba3" src="sounds/ba3.m4a"></audio>
+    <audio id="ta3" src="sounds/ta3.m4a"></audio>
+    <audio id="tsa3" src="sounds/tsa3.m4a"></audio>
+    <audio id="jim3" src="sounds/jim3.m4a"></audio>
+    <audio id="ha3" src="sounds/ha3.m4a"></audio>
+    <audio id="kho3" src="sounds/kho3.m4a"></audio>
+    <audio id="dal3" src="sounds/dal3.m4a"></audio>
+    <audio id="dzal3" src="sounds/dzal3.m4a"></audio>
+    <audio id="ra3" src="sounds/ra3.m4a"></audio>
+    <audio id="zai3" src="sounds/zai3.m4a"></audio>
+    <audio id="sin3" src="sounds/sin3.m4a"></audio>
+    <audio id="syin3" src="sounds/syin3.m4a"></audio>
+    <audio id="shad3" src="sounds/shad3.m4a"></audio>
+    <audio id="dhad3" src="sounds/dhad3.m4a"></audio>
+    <audio id="tha3" src="sounds/tha3.m4a"></audio>
+    <audio id="zha3" src="sounds/zha3.m4a"></audio>
+    <audio id="ain3" src="sounds/ain3.m4a"></audio>
+    <audio id="ghain3" src="sounds/ghain3.m4a"></audio>
+    <audio id="fa3" src="sounds/fa3.m4a"></audio>
+    <audio id="qaf3" src="sounds/qaf3.m4a"></audio>
+    <audio id="kaf3" src="sounds/kaf3.m4a"></audio>
+    <audio id="lam3" src="sounds/lam3.m4a"></audio>
+    <audio id="mim3" src="sounds/mim3.m4a"></audio>
+    <audio id="nun3" src="sounds/nun3.m4a"></audio>
+    <audio id="ha23" src="sounds/ha23.m4a"></audio>
+    <audio id="waw3" src="sounds/waw3.m4a"></audio>
+    <audio id="ya3" src="sounds/ya3.m4a"></audio>
+
+    <script>
+        function playAudio(letter) {
+            const audio = document.getElementById(letter);
+            if (audio) {
+                audio.play();
+            }
+        }
+    </script>
+
+</body>
+</html>
